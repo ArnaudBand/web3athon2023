@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <div className="container">
       <main className="main">
-        <h1 className="title">
-          Welcome to <a href="https://thirdweb.com/">thirdweb</a>!
+        <h1 className="text-3xl font-bold underline">
+          Nft's mint app
         </h1>
 
         <p className="description">
@@ -16,7 +16,7 @@ export default function Home() {
         </p>
 
         <div className="connect">
-          <ConnectWallet dropdownPosition={{ side: 'bottom', align: 'center'}} />
+          <ConnectWallet dropdownPosition={{ side: 'bottom', align: 'center' }} />
         </div>
 
         <div className="grid">
