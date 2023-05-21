@@ -12,16 +12,20 @@ const Header = () => {
 
   return (
     <nav className="connect">
-      <div className='w-full h-6 px-6 flerx justify-betwen items-center'>
-        <h1>Logo</h1>
+      <div className='p-10 flex justify-between items-center'>
+        <h1 className=''>Logo</h1>
         <ul className='hidden md:flex cursor-pointer space-x-6'>
-          <ConnectWallet dropdownPosition={{ side: 'bottom', align: 'center' }} /> 
+          <ConnectWallet dropdownPosition={{ side: 'bottom', align: 'center' }} />
         </ul>
         <div onClick={handleNavbarOpen} className='md:hidden cursor-pointer'>
-          {(!open) ? <AiOutlineMenuFold size={25}/> : <AiOutlineClose /> }
-          <ul className='absolute top-14 left-0 w-full h-screen py-12'>
-            <ConnectWallet dropdownPosition={{ side: 'bottom', align: 'center' }} /> 
-          </ul>
+          {(!open) ? (<div>
+            <AiOutlineClose />
+            <ul className='flex justify-centerw-full h-screen py-12'>
+              <ConnectWallet dropdownPosition={{ side: 'bottom', align: 'center' }} />
+            </ul>
+          </div>) : (
+            <AiOutlineMenuFold size={25} />
+          )}
         </div>
       </div>
     </nav>
