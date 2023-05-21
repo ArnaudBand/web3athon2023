@@ -20,7 +20,7 @@ const Header = () => {
         <div onClick={handleNavbarOpen} className='md:hidden cursor-pointer'>
           {(!open) ? (<div>
             <AiOutlineClose />
-            <ul className='flex justify-centerw-full h-screen py-12'>
+            <ul className='absolute top-14 left-20 w-full h-screen py-12'>
               <ConnectWallet dropdownPosition={{ side: 'bottom', align: 'center' }} />
             </ul>
           </div>) : (
