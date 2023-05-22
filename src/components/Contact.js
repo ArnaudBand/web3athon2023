@@ -1,4 +1,36 @@
+import React, { useState } from 'react';
+
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState('');
+
+  const handleSubmit = async(e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(/api/nodemailer, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus(data.message);
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else {
+        setStatus('Failed to send Email');
+      }
+    } catch (error) {
+      setStatus('Failed to send email');
+    }
+  }
   return (
     <section id="contact">
       <div className="container">
@@ -50,19 +82,16 @@ const Contact = () => {
         </div>
         <div className="fn_cs_contact_form">
           <form
-            action="/"
-            method="post"
+            onSubmit={handleSubmit}
             className="contact_form"
-            id="contact_form"
-            autoComplete="off"
           >
             <div className="input_list">
               <ul>
                 <li>
-                  <input id="name" type="text" placeholder="Your Name *" />
+                  <input id="name" type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Your Name *" />
                 </li>
                 <li>
-                  <input id="email" type="text" placeholder="Your Email *" />
+                  <input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Your Email *" />
                 </li>
                 <li>
                   <input
@@ -81,6 +110,8 @@ const Contact = () => {
                 <li className="full">
                   <textarea
                     id="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     placeholder="Your Message *"
                     defaultValue={""}
                   />
@@ -97,13 +128,14 @@ const Contact = () => {
                     </p>
                   </label>
                   <div className="mw300">
-                    <a
+                    <button
                       id="send_message"
-                      href="#"
+                      type={submit}
                       className="metaportal_fn_button full"
                     >
                       <span>Send Message</span>
-                    </a>
+                    </button>
+                    {status && <p>{status}</p>}
                   </div>
                 </li>
               </ul>
