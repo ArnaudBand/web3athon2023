@@ -1,7 +1,6 @@
 import { ThirdwebProvider, ChainId } from '@thirdweb-dev/react'
 import About from "../src/components/About";
 import Collection from "../src/components/Collection";
-import Contact from "../src/components/Contact";
 import FunFacts from "../src/components/FunFacts";
 import HeroSlider from "../src/components/HeroSlider";
 import News from "../src/components/News";
@@ -44,7 +43,6 @@ const Index = () => {
         <SectionDivider />
         {/* !Section Divider */}
         {/* Section */}
-        <Contact />
       </Layout>
     </ThirdwebProvider>
   );
