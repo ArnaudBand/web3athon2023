@@ -836,11 +836,13 @@ a.full_link{
 }
 .header .trigger{
 	margin-right: 20px;
+	display: flex;
+	align-items: center;
 }
 .trigger{
 	display: block;
     width: 50px;
-    height: 50px;
+    height: 40px;
     border-radius: 100%;
     background-color: #000;
     z-index: 5;
@@ -848,6 +850,7 @@ a.full_link{
 	position: relative;
 	cursor: pointer;
 }
+
 .trigger:after{
 	content: '';
     position: absolute;

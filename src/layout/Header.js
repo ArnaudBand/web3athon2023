@@ -14,13 +14,14 @@ const Header = ({ walletToggle, navigationToggle }) => {
       <div className="header">
         <div className="header_in">
           <div className="trigger_logo">
-            <div className="trigger" onClick={() => navigationToggle(true)}>
+            {/* <div className="trigger" onClick={() => navigationToggle(true)}>
               <span />
-            </div>
+            </div> */}
             <div className="logo">
               <Link href="/">
                 <a>
-                  <img src="/img/logo.png" alt="" />
+                  {/* <img src="/img/logo.png" alt="" /> */}
+                  <h4>Web3athon</h4>
                 </a>
               </Link>
             </div>
