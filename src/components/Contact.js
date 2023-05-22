@@ -9,7 +9,7 @@ const Contact = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      const response = await fetch(/api/sendEmail, {
+      const response = await fetch("./api/sendEmail", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -84,6 +84,10 @@ const Contact = () => {
           <form
             onSubmit={handleSubmit}
             className="contact_form"
+            action="/"
+            method="post"
+            id="contact_form"
+            autoComplete="off"
           >
             <div className="input_list">
               <ul>
@@ -130,7 +134,7 @@ const Contact = () => {
                   <div className="mw300">
                     <button
                       id="send_message"
-                      type={submit}
+                      type="submit"
                       className="metaportal_fn_button full"
                     >
                       <span>Send Message</span>
