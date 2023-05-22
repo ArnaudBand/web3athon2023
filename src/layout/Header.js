@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ConnectWallet } from "@thirdweb-dev/react";
 import { useEffect } from "react";
 import { connect } from "react-redux";
 import { navigationToggle, walletToggle } from "../redux/actions/siteSettings";
@@ -56,16 +57,8 @@ const Header = ({ walletToggle, navigationToggle }) => {
             </ul>
           </div>
           <div className="wallet">
-            <a
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                walletToggle(true);
-              }}
-              className="metaportal_fn_button wallet_opener"
-            >
-              <span>Connect To Wallet</span>
-            </a>
+            
+              <ConnectWallet />
           </div>
         </div>
       </div>
