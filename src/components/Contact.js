@@ -9,7 +9,7 @@ const Contact = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      const response = await fetch(/api/nodemailer, {
+      const response = await fetch(/api/sendEmail, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
