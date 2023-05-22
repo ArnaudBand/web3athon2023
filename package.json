@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@thirdweb-dev/react": "^3.12.2",
+    "@thirdweb-dev/sdk": "^3.10.17",
+    "ethers": "^5.7.2",
     "isotope-layout": "^3.0.6",
     "next": "12.3.1",
     "nodemailer": "^6.9.2",
