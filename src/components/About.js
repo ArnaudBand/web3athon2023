@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 const About = () => {
   return (
     <section id="about">
@@ -113,7 +114,7 @@ const About = () => {
             </div>
             <Link href="/nft-single">
               <a className="metaportal_fn_button">
-                <span>How to Mint</span>
+                <span>Mint now</span>
               </a>
             </Link>
           </div>

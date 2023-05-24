@@ -1447,6 +1447,15 @@ a.full_link{
 	align-items: center;
 	padding: 110px 0;
 }
+
+.game__section {
+	margin-top: 4rem;
+}
+
+.team_section_text {
+	margin: 8rem 0;
+}
+
 .fn_cs_about .left_part .img_in{
 	background-size: cover;
 	border-radius: 10px;
@@ -5537,6 +5546,9 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 	.metaportal_fn_drops .grid > li{
 		width: 50%;
 	}
+	.display_mobile {
+		display: none;
+	}
 }
 @media(max-width: 768px){
 	.metaportal_fn_pnb .fn_trigger{
@@ -5598,6 +5610,11 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 		top: 10px;
 		bottom: 10px;
 	}
+
+	.display_mobile {
+		display: none;
+	}
+
 	.footer{
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -5659,6 +5676,13 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 		padding: 30px 20px;
 		-ms-align-items: flex-start;
 		align-items: flex-start;
+	}
+	.slider_holder {
+		display: none;
+	}
+
+	.display_mobile {
+		display: none;
 	}
 	.metaportal_fn_author_info .info_img{
 		width: 50%;

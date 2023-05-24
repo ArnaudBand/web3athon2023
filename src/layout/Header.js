@@ -15,13 +15,10 @@ const Header = ({ walletToggle, navigationToggle }) => {
       <div className="header">
         <div className="header_in">
           <div className="trigger_logo">
-            {/* <div className="trigger" onClick={() => navigationToggle(true)}>
-              <span />
-            </div> */}
+            
             <div className="logo">
               <Link href="/">
                 <a>
-                  {/* <img src="/img/logo.png" alt="" /> */}
                   <h4>Web3athon</h4>
                 </a>
               </Link>
@@ -40,18 +37,28 @@ const Header = ({ walletToggle, navigationToggle }) => {
                 </Link>
               </li>
               <li>
+                <Link href="/#nftSingle">
+                  <a className="creative_link">Mint</a>
+                </Link>
+              </li>
+              <li>
                 <Link href="/#collection">
                   <a className="creative_link">Collection</a>
                 </Link>
               </li>
               <li>
-                <Link href="/#news">
-                  <a className="creative_link">Blog</a>
+                <Link href="/#game">
+                  <a className="creative_link">GamePlay</a>
                 </Link>
               </li>
               <li>
-                <Link href="/#contact">
-                  <a className="creative_link">Contact</a>
+                <Link href="/#team_name">
+                  <a className="creative_link">Team</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/#roadmap">
+                  <a className="creative_link">Roadmap</a>
                 </Link>
               </li>
             </ul>

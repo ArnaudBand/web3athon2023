@@ -96,8 +96,8 @@ const MobileNavigation = ({ walletToggle, navigationToggle }) => {
               </a>
             </li>
             <li>
-              <a className="creative_link" href="#news">
-                Blog
+              <a className="creative_link" href="#game">
+                GamePlay
               </a>
             </li>
             <li>

@@ -1,8 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { roadMapProps } from "../sliderProps";
+import SectionDivider from "./SectionDivider";
+
 const RoadMapSlider = () => {
   return (
-    <section id="roadmap">
+    <section id="roadmap" className="display_mobile" >
+      <SectionDivider />
       <div className="container">
         <h3
           className="fn__maintitle big"

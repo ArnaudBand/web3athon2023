@@ -1,12 +1,13 @@
 import { ThirdwebProvider, ChainId } from '@thirdweb-dev/react'
 import About from "../src/components/About";
 import Collection from "../src/components/Collection";
-import FunFacts from "../src/components/FunFacts";
 import HeroSlider from "../src/components/HeroSlider";
-import News from "../src/components/News";
+import Game from "../src/components/Game";
+import NftSingle from './nft-single';
 import RoadMapSlider from "../src/components/RoadMapStep";
 import SectionDivider from "../src/components/SectionDivider";
 import Layout from "../src/layout/Layout";
+import Team from '../src/components/TeamName';
 
 const Index = () => {
   return (
@@ -15,9 +16,6 @@ const Index = () => {
         {/* Home Section */}
         <HeroSlider />
         {/* !Home Section */}
-        {/* Fun Facts */}
-        <FunFacts />
-        {/* !Fun Facts */}
         {/* About Section */}
         <About />
         {/* !About Section */}
@@ -31,18 +29,22 @@ const Index = () => {
         <SectionDivider />
         {/* !Section Divider */}
         {/* Section RoadMap */}
-        <RoadMapSlider />
+        <Game />
+        {/* !Collection Section */}
+        {/* Section Divider */}
+        {/* <SectionDivider /> */}
+        {/* !Section Divider */}
+        {/* Section RoadMap */}
+        <Team />
         {/* !Section RoadMap */}
         {/* Section Divider */}
-        <SectionDivider />
+        {/* <SectionDivider /> */}
         {/* !Section Divider */}
         {/* Section News */}
-        <News />
+        <RoadMapSlider />
         {/* !Section News */}
         {/* Section Divider */}
-        <SectionDivider />
-        {/* !Section Divider */}
-        {/* Section */}
+        
       </Layout>
     </ThirdwebProvider>
   );
