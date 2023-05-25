@@ -8,7 +8,7 @@ const RoadMapSlider = () => {
       <SectionDivider />
       <div className="container">
         <h3
-          className="fn__maintitle big"
+          className="fn__maintitle big team_section_text"
           data-text="RoadMap"
           data-align="center"
         >

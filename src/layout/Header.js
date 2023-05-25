@@ -37,7 +37,7 @@ const Header = ({ walletToggle, navigationToggle }) => {
                 </Link>
               </li>
               <li>
-                <Link href="/#nftSingle">
+                <Link href="/nft-single">
                   <a className="creative_link">Mint</a>
                 </Link>
               </li>

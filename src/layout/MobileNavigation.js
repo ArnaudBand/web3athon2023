@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Fragment, useState } from "react";
 import { connect } from "react-redux";
 import { navigationToggle, walletToggle } from "../redux/actions/siteSettings";
+
 const MobileNavigation = ({ walletToggle, navigationToggle }) => {
   const [toggle, setToggle] = useState(false);
   return (
@@ -81,7 +82,7 @@ const MobileNavigation = ({ walletToggle, navigationToggle }) => {
         <div className="mob_bot" style={{ display: toggle ? "block" : "none" }}>
           <ul>
             <li>
-              <a className="creative_link" href="#home">
+              <a className="creative_link" href="">
                 Home
               </a>
             </li>
@@ -91,6 +92,11 @@ const MobileNavigation = ({ walletToggle, navigationToggle }) => {
               </a>
             </li>
             <li>
+                <Link href="/nft-single">
+                  <a className="creative_link">Mint</a>
+                </Link>
+              </li>
+            <li>
               <a className="creative_link" href="#collection">
                 Collection
               </a>
@@ -98,11 +104,6 @@ const MobileNavigation = ({ walletToggle, navigationToggle }) => {
             <li>
               <a className="creative_link" href="#game">
                 GamePlay
-              </a>
-            </li>
-            <li>
-              <a className="creative_link" href="#contact">
-                Contact
               </a>
             </li>
           </ul>
