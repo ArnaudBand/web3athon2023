@@ -1420,11 +1420,6 @@ a.full_link{
 	filter: drop-shadow(0 5px 20px rgba(204,0,255,.15));
 }
 
-
-
-
-
-
 .fn_cs_about{
 	position: relative;
 	display: -webkit-flex;
@@ -1432,8 +1427,12 @@ a.full_link{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+}
+
+.fn_cs_about__m {
 	margin-bottom: 150px;
 }
+
 .fn_cs_about .left_part{
 	width: 57%;
 	position: relative;

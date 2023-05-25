@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="about">
       {/* About Shortcode */}
-      <div className="fn_cs_about">
+      <div className="fn_cs_about fn_cs_about__m ">
         <div className="left_part">
           <div className="img">
             <div className="img_in" data-bg-img="/img/about/1.jpg">
