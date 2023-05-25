@@ -151,10 +151,7 @@ const Collection = () => {
         </div>
         <div className="fn_cs_desc">
           <p>
-            Meta Legends represent a collection of 17,000 legends categorized by
-            level of rarity and generated with hundreds of elements. The Legends
-            are stored as ERC-721 tokens on the Ethereum blockchain and hosted
-            on IPFS.
+            "S3sh" provides an exciting and immersive gaming experience that educates players about ancient African principles and history. By earning rewards and collecting NFTs with metadata, players can delve into hidden historical information and gain access to real-life experiences, comps, and tours. With its availability on platforms like Facebook, web, and the groundbreaking Solana Saga, "S3sh" offers a unique opportunity to explore African culture, enhance knowledge, and enjoy the thrill of gameplay all in one engaging package.
           </p>
           <Link href="/collection">
             <a className="metaportal_fn_button">
