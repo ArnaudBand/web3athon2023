@@ -18,8 +18,8 @@ const About = () => {
         </div>
         <div className="right_part">
           <div className="right_in">
-            <h3 className="fn__maintitle" data-text="The Rise of Legends">
-              The Rise of Legends
+            <h3 className="fn__maintitle" data-text="Introducing 'S3sh's Wisdom: Unveiling African History'">
+              Introducing 'S3sh's Wisdom: Unveiling African History'
             </h3>
             <div className="fn_cs_divider">
               <div className="divider">
@@ -29,32 +29,16 @@ const About = () => {
             </div>
             <div className="desc">
               <p>
-                As the first hero of the Meta Legends, collection has over 9,999
-                unique skins drawn from the different missions and challenges he
-                faced throughout his life.
+                Welcome to "S3sh's Wisdom," an interactive game delving into African history and culture. Discover the wisdom of S3sh, a legendary figure, through a tapestry of significant symbols representing astronomy, mathematics, literature, and more.
               </p>
               <p>
-                The artwork has been hand-drawned by Robert Green in the
-                traditional anime style and composited by Layla Efiyo.
+                Our aim is to provide an engaging learning experience, bridging the gap between entertainment and education. We've integrated Non-Fungible Tokens (NFTs) into our game, unlocking unique digital assets carrying educational information with each milestone.
               </p>
               <p>
-                Curabitur pharetra velit eget dignissim varius. In vulputate
-                elit at tortor pellentesque, non pulvinar neque consequat.
-                Aenean tristique odio in libero tincidunt maximus. Nulla
-                pharetra viverra dolor ut blandit. Cras finibus vel tortor eget
-                lacinia. Pellentesque interdum elit non lacinia faucibus. Morbi
-                nec felis auctor, tincidunt lacus sit amet, iaculis ipsum.
-                Phasellus tempus sit amet justo et feugiat. Duis blandit semper
-                lorem, egestas euismod ligula pharetra ac. Sed porta lorem eget
-                neque bibendum, eget euismod justo mollis.
-              </p>
-              <p>
-                Donec tristique porttitor sem, eget fermentum elit varius nec.
-                Donec ut orci ipsum. Morbi efficitur felis eget dapibus
-                fermentum. Phasellus sed tellus volutpat, hendrerit leo non,
-                sollicitudin neque. Etiam ac lacus quam. Vivamus suscipit nisl
-                tellus, at congue odio commodo at. Cras ante enim, sodales at
-                pretium et, tempus at libero.
+                These NFTs will lead you to a wealth of extended knowledge. By collecting and interpreting them, you'll delve deeper into the fascinating world of African history, gaining valuable insights.
+                We're addressing the need for accessible and engaging resources about African history. "S3sh's Wisdom" aims to make learning about this rich heritage exciting, immersive, and easily accessible.
+                Through our game, you'll contribute to the preservation of African heritage while enjoying a rewarding gaming experience. Join us in unveiling S3sh's wisdom and igniting a passion for African history. Embark on this educational adventure today. Together, let's rewrite history.
+
               </p>
             </div>
             <a
@@ -73,8 +57,8 @@ const About = () => {
         {/* Mint Shortcode */}
         <div className="fn_cs_mint">
           <div className="left_part">
-            <h3 className="fn__maintitle" data-text="How to Mint">
-              How to Mint
+            <h3 className="fn__maintitle" data-text="Minting NFTs: A Roadmap to Unlocking Treasures">
+              Minting NFTs: A Roadmap to Unlocking Treasures
             </h3>
             <div className="fn_cs_divider">
               <div className="divider">
@@ -84,32 +68,32 @@ const About = () => {
             </div>
             <div className="desc">
               <p>
-                As the first hero of the Meta Legends, collection has over 9,999
-                unique skins drawn from the different missions and challenges he
-                faced throughout his life.
+                Welcome to the magical world of NFT minting! Follow this simple roadmap to unlock the treasures of unique digital assets:
               </p>
               <p>
-                The artwork has been hand-drawned by Robert Green in the
-                traditional anime style and composited by Layla Efiyo.
+                Step 1: Connect Your Crypto Wallet
               </p>
               <p>
-                Curabitur pharetra velit eget dignissim varius. In vulputate
-                elit at tortor pellentesque, non pulvinar neque consequat.
-                Aenean tristique odio in libero tincidunt maximus. Nulla
-                pharetra viverra dolor ut blandit. Cras finibus vel tortor eget
-                lacinia. Pellentesque interdum elit non lacinia faucibus. Morbi
-                nec felis auctor, tincidunt lacus sit amet, iaculis ipsum.
-                Phasellus tempus sit amet justo et feugiat. Duis blandit semper
-                lorem, egestas euismod ligula pharetra ac. Sed porta lorem eget
-                neque bibendum, eget euismod justo mollis.
+                To begin your journey, you need a special wallet to store and manage your digital treasures.
+                Don't worry, it's like a magical pouch that keeps your NFTs safe.
               </p>
               <p>
-                Donec tristique porttitor sem, eget fermentum elit varius nec.
-                Donec ut orci ipsum. Morbi efficitur felis eget dapibus
-                fermentum. Phasellus sed tellus volutpat, hendrerit leo non,
-                sollicitudin neque. Etiam ac lacus quam. Vivamus suscipit nisl
-                tellus, at congue odio commodo at. Cras ante enim, sodales at
-                pretium et, tempus at libero.
+                Step 2: Explore the Game and Collect Symbols
+              </p>
+              <p>
+                Now that you're all set with your crypto wallet, let's dive into the game and start collecting symbols. These symbols hold special meanings and represent different aspects of African history.
+              </p>
+              <p>
+              Step 3: Reach Milestones and Mint NFTs
+              </p>
+              <p>
+              Great job on collecting symbols! Now it's time to turn them into magical NFTs. 
+              </p>
+              <p>
+              Step 4: Learn and Discover with Your NFTs
+              </p>
+              <p>
+              Congratulations, you've unlocked your very own NFTs! But they're not just digital treasures—they're also full of educational information. 
               </p>
             </div>
             <Link href="/nft-single">

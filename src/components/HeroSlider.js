@@ -125,10 +125,10 @@ const HeroSlider = () => {
       <div className="container">
         <h3
           className="fn__maintitle big"
-          data-text="Meta Legends"
+          data-text="S3sh's Wisdom: Unveiling African History"
           data-align="center"
         >
-          Meta Legends
+          S3sh's Wisdom: Unveiling African History
         </h3>
         {/* Slider */}
         <div className="fn_cs_slider" data-responsive="on">
@@ -220,10 +220,7 @@ const HeroSlider = () => {
         {/* Description */}
         <div className="fn_cs_desc">
           <p>
-            Meta Legends represent a collection of 17,000 legends categorized by
-            level of rarity and generated with hundreds of elements. The Legends
-            are stored as ERC-721 tokens on the Ethereum blockchain and hosted
-            on IPFS.
+          Introducing "S3sh," an educational game inspired by the ancient African principles of the goddess Seshat. This web3 game explores African history, allowing players to earn rewards and discover hidden historical information. Dive into the blog "Theresa V. Kennedy's Insights" to enhance your understanding of African culture, traditions, and important events. "S3sh" is available on Facebook, web, and the innovative Solana Saga platform, offering an immersive experience blending entertainment and valuable knowledge.
           </p>
           <a
             href="https://opensea.io/"
