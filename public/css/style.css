@@ -6772,10 +6772,6 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 	margin-bottom: 140px;
 }
 
-.border_img {
-	border-radius: 50%;
-}
-
 .fn_cs_roadmap .step_holder {
 	padding: 50px;
 	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='%23CCCCCC' stroke-width='1' stroke-dasharray='9%2c7' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
@@ -6821,8 +6817,6 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 }
 
 .fn_cs_roadmap .swiper-slide .item {
-	height: 15vw;
-	width: 15vw;
 	border: 1px solid rgba(255, 255, 255, .15);
 	border-radius: 10px;
 	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
@@ -6831,6 +6825,25 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 
 .fn_cs_roadmap .swiper-wrapper {
 	padding: 60px 0 20px;
+}
+
+.flex_item {
+	display: flex;
+	/* justify-content: left;
+	align-items: center; */
+	flex-direction: column;
+}
+
+.img__height {
+	height: 5rem;
+	width: 5rem;
+	margin: 0 0 1rem 0;
+}
+
+.border_img {
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
 }
 
 .fn_cs_roadmap .swiper-slide .icon {
@@ -7558,7 +7571,7 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 
 .fn_cs_hero_slider .item {
 	position: relative;
-	padding: 20px;
+	/* padding: 20px; */
 	border-radius: 20px;
 	background-color: rgba(255, 255, 255, .05);
 	z-index: 2;
