@@ -15,9 +15,6 @@ const TeamName = () => {
           Team
         </h3>
         <div className="fn_cs_roadmap">
-          {/* <div className="step_holder">
-            <div className="step_in" />
-          </div> */}
           <div className="slider_holder">
             <Swiper {...roadMapProps} className="swiper-container">
               <div className="swiper-wrapper">

@@ -19,17 +19,7 @@ const Collection = () => {
       var secondImage = secondDiv.querySelector("input").value;
       firstDiv.classList.add("ready");
       secondDiv.classList.add("ready");
-      // console.log(firstDiv.querySelector("input").value == firstDiv);
       setTimeout(function () {
-        // console.log(secondDiv.querySelector("input").value == firstDiv);
-        // firstDiv.querySelector("input").value == secondImage;
-        // firstDiv.querySelector(".abs_img").style.backgroundImage =
-        //   "url(" + secondImage + ")";
-        // // secondDiv.querySelector("input").val(firstImage);
-        // secondDiv.querySelector("input").value == firstDiv;
-        // console.log(secondDiv.querySelector("input").value);
-        // secondDiv.querySelector(".abs_img").style.backgroundImage =
-        //   "url(" + firstImage + ")";
 
         firstDiv.classList.remove("ready");
         secondDiv.classList.remove("ready");

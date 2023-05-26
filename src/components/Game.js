@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Game = () => {
   return (
-    <section id="game" className="game__section">
+    <section id="game" className="game__section m_cs_game">
       {/* About Shortcode */}
       <div className="fn_cs_about">
         <div className="right_part">

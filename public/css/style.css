@@ -1433,6 +1433,10 @@ a.full_link{
 	margin-bottom: 150px;
 }
 
+.m_cs_game {
+	margin-bottom: 150px;
+}
+
 .fn_cs_about .left_part{
 	width: 57%;
 	position: relative;
@@ -5548,6 +5552,9 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 	.display_mobile {
 		display: none;
 	}
+	.m_cs_game {
+		margin-bottom: 0;
+	}
 }
 @media(max-width: 768px){
 	.metaportal_fn_pnb .fn_trigger{
@@ -5656,6 +5663,9 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 	.metaportal_fn_boxed_countdown span{
 		font-size: 14px;
 	}
+	.m_cs_game {
+		margin-bottom: 0;
+	}
 }
 @media(max-width: 480px){
 	.metaportal_fn_pnb .fn_trigger{
@@ -5726,6 +5736,9 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 	.social a,
 	.social a:after{
 		font-size: 14px;
+	}
+	.m_cs_game {
+		margin-bottom: 0;
 	}
 }
 
