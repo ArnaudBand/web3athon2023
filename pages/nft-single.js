@@ -1,15 +1,14 @@
 import Link from "next/link";
-import { useContractMetadata, useNFTDrop, useContract } from "@thirdweb-dev/react";
+import { useContractMetadata, useNFTDrop, useContract, useMetadata } from "@thirdweb-dev/react";
 import Layout from "../src/layout/Layout";
 
-const contract_address = "0x1Da00b654977561772eF1c311648631e40Dc4Ada";
+const contract_address = "0xC2f28E615f10e965564A53e99922C999c9Ffc7dE";
 
 const NftSingle = () => {
-  const { data: contract } = useContract(contract_address);
-  // const contract = useNFTDrop(contract_address);
-  // const { data: contractMetadata } = useContractMetadata(contract_address);
+  const { contract } = useContract(contract_address);
+  const { data, isLoading, error } = useMetadata(contract);
 
-  console.log(contract)
+  console.log(data)
   return (
     <Layout pageTitle={"Minting"}>
       <div className="metaportal_fn_mintpage">
@@ -92,7 +91,7 @@ const NftSingle = () => {
                 // data-text="Meta Legends #5675"
                 data-align="left"
               >
-                Meta Legends #5675
+                {data?.name}
               </h3>
               <div className="desc">
                 <p>
