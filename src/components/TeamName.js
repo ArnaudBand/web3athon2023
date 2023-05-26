@@ -78,8 +78,8 @@ const TeamName = () => {
                     <div className="item_in">
                       <img className="border_img size_img" src="/img/author/8.png" alt="" />
                       <p className="desc">Web3 Dev</p>
-                      <p className="desc">Atlantic City, NJ</p>
-                      <p className="desc">Retired Casino Dealer</p>
+                      <p className="desc">New Delhi, India</p>
+                      <p className="desc">BCA (Bachelor in Computer Applications)</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -100,7 +100,7 @@ const TeamName = () => {
                     <span className="icon" />
                     <span className="phase">Wilson Y.</span>
                     <div className="item_in">
-                      <img className="border_img" src="/img/author/3.png" alt="" />
+                      <img className="border_img" src="/img/author/5.png" alt="" />
                       <p className="desc">Web3 Dev</p>
                       <p className="desc">Atlantic City, NJ</p>
                       <p className="desc">Retired Casino Dealer</p>
@@ -108,18 +108,19 @@ const TeamName = () => {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
-                  <div className="item">
+                  <div className="item"> 
                     <span className="icon" />
                     <span className="phase">Jeff St L.</span>
                     <div className="item_in">
+                      <img className="border_img" src="/img/author/6.png" alt="" />
                       <p className="date">January 28, 2023</p>
-                      <h3 className="title">Mini Game Lounch For Community</h3>
-                      <p className="desc">
+                      <h3 className="title">Mini Game Launch For Community</h3>
+                      {/* <p className="desc">
                         Morbi non dignissim erat, a blandit felis. Suspendisse
                         nec lorem vel orci varius congue ut vitae est. Nam quis
                         tempus nisl. Fusce posuere nibh a mi molestie, sit amet
                         ornare lectus interdum.
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 </SwiperSlide>
