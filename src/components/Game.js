@@ -56,7 +56,7 @@ const Game = () => {
             </a>
           </div>
         </div>
-        <div className="left_part">
+        <div className="left_part left__cs">
           <div className="img">
             <div className="img_in" data-bg-img="/img/about/1.jpg">
               <img src="/img/1x1.jpg" alt="" />
