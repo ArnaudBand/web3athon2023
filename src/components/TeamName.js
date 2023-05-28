@@ -28,7 +28,7 @@ const TeamName = () => {
                           <img className="border_img" src="/img/author/1.png" alt="" />
                         </div>
                         <div className="text__height">
-                          <p className="desc" >Founder/Graphic</p>
+                          <p className="desc" >Founder</p>
                           <p className="desc">Atlantic City, NJ</p>
                           <p className="desc">MBA, Technology Management</p>
                           <p className="desc">BA, Anthropology/African Studies</p>
@@ -67,8 +67,8 @@ const TeamName = () => {
                             <img className="border_img" src="/img/author/2.png" alt="" />
                           </div>
                           <div className="text__height">
-                            <p className="desc">Dreamweaver/Team Member</p>
-                            <p className="desc">Atlanta, GA</p>
+                            <p className="desc">Researcher & Dev</p>
+                            <p className="desc">Dreamweaver expert</p>
                             <p className="desc">BA Infromation technology</p>
                           </div>
                       </div>
@@ -162,7 +162,7 @@ const TeamName = () => {
                         <div className="text__height">
                           <p className="desc">Product Designer</p>
                           <p className="desc">Montreal, CND</p>
-                          <p className="desc">Electrical Engineer</p>
+                          <p className="desc">Engineer</p>
                         </div>
                       </div>
                     </div>
