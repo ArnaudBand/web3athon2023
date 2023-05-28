@@ -10,25 +10,39 @@ import {
   Web3Button,
 } from "@thirdweb-dev/react";
 import { BigNumber, utils } from "ethers";
-// import type { NextPage } from "next";
 import { useMemo, useState } from "react";
 import styles from "../styles/Theme.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
-import { myEditionDropContractAddress, tokenId } from "../const/yourDetails";
+import { myEditionDropContractAddress, tokenId } from "../const/myDetails";
+// Import necessary libraries, components, hooks, and constants
 
 const Home = () => {
+  // Get the current user's wallet address using the useAddress hook
   const address = useAddress();
+
+  // Define a state variable for the quantity and a function to update it using useState
   const [quantity, setQuantity] = useState(1);
+
+  // Get the contract object for the specified contract address using the useContract hook
   const { contract: editionDrop } = useContract(myEditionDropContractAddress);
+
+  // Get the metadata of the editionDrop contract using the useContractMetadata hook
   const { data: contractMetadata } = useContractMetadata(editionDrop);
 
+  // Get the claim conditions of the editionDrop contract using the useClaimConditions hook
   const claimConditions = useClaimConditions(editionDrop);
+
+  // Get the active claim condition for the current user's wallet and the specified tokenId using the useActiveClaimConditionForWallet hook
   const activeClaimCondition = useActiveClaimConditionForWallet(
     editionDrop,
     address,
     tokenId
   );
+
+  // Get the claimer proofs for the editionDrop contract, current user's address (if available), and the specified tokenId using the useClaimerProofs hook
   const claimerProofs = useClaimerProofs(editionDrop, address || "", tokenId);
+
+  // Get the claim ineligibility reasons for the editionDrop contract, specified quantity, current user's wallet address (if available), and the specified tokenId using the useClaimIneligibilityReasons hook
   const claimIneligibilityReasons = useClaimIneligibilityReasons(
     editionDrop,
     {
@@ -38,9 +52,12 @@ const Home = () => {
     tokenId
   );
 
+  // Get the claimed supply for the editionDrop contract and the specified tokenId using the useTotalCirculatingSupply hook
   const claimedSupply = useTotalCirculatingSupply(editionDrop, tokenId);
 
   const totalAvailableSupply = useMemo(() => {
+
+    // Calculate the total available supply based on the active claim condition's available supply
     try {
       return BigNumber.from(activeClaimCondition.data?.availableSupply || 0);
     } catch {
@@ -53,6 +70,7 @@ const Home = () => {
   }, [claimedSupply]);
 
   const numberTotal = useMemo(() => {
+    // Calculate the total number of tokens based on the total available supply and claimed supply
     const n = totalAvailableSupply.add(BigNumber.from(claimedSupply.data || 0));
     if (n.gte(1_000_000)) {
       return "";
@@ -61,6 +79,7 @@ const Home = () => {
   }, [totalAvailableSupply, claimedSupply]);
 
   const priceToMint = useMemo(() => {
+    // Calculate the price to mint the specified quantity of tokens based on the active claim condition's currency metadata
     const bnPrice = BigNumber.from(
       activeClaimCondition.data?.currencyMetadata.value || 0
     );
@@ -76,6 +95,7 @@ const Home = () => {
   ]);
 
   const maxClaimable = useMemo(() => {
+    // Calculate the maximum claimable quantity based on various factors including the active claim condition's max claimable supply, max claimable per wallet, and the claimer proof's max claimable value
     let bnMaxClaimable;
     try {
       bnMaxClaimable = BigNumber.from(
@@ -132,6 +152,7 @@ const Home = () => {
   ]);
 
   const isSoldOut = useMemo(() => {
+    // Check if the NFTs are sold out based on the active claim condition's available supply and the number of tokens claimed
     try {
       return (
         (activeClaimCondition.isSuccess &&
@@ -151,6 +172,7 @@ const Home = () => {
   ]);
 
   const canClaim = useMemo(() => {
+    // Check if the user can claim NFTs based on various conditions including active claim condition, claim ineligibility reasons, and sold out status
     return (
       activeClaimCondition.isSuccess &&
       claimIneligibilityReasons.isSuccess &&
