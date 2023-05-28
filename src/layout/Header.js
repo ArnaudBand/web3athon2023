@@ -63,8 +63,11 @@ const Header = ({ walletToggle, navigationToggle }) => {
               </li>
             </ul>
           </div>
+          <div className="play_games">
+             <a  href="https://nft-gated-eight.vercel.app/login"
+             >Play Games</a>
+          </div>
           <div className="wallet">
-            
               <ConnectWallet />
           </div>
         </div>

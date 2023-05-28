@@ -54,6 +54,10 @@ const MobileNavigation = ({ walletToggle, navigationToggle }) => {
               </ul>
             </div>
           </div>
+          <div className="play_games" >
+             <a  href="https://nft-gated-eight.vercel.app/login" 
+             style={{fontSize: "1.5vw", borderRadius:"8px", background:"#7000ff", }}>Play Games</a>
+          </div>
           <div className="wallet">
             <a
               href="#"

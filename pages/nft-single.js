@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useContractMetadata, useNFTDrop, useContract, useMetadata } from "@thirdweb-dev/react";
 import Layout from "../src/layout/Layout";
 
-const contract_address = "0xC2f28E615f10e965564A53e99922C999c9Ffc7dE";
+const contract_address = "0x12A243D816aE3B64dC23def3821fe8A9549EF42b";
 
 const NftSingle = () => {
   const { contract } = useContract(contract_address);
