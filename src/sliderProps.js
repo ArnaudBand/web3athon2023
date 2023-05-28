@@ -36,7 +36,7 @@ const roadmapStep = (mySwiper, step, widthParts) => {
       viewBox = 4;
   }
 
-  step.style.width = (mySwiper.activeIndex + viewBox) * widthParts + "%";
+  // step.style.width = (mySwiper.activeIndex + viewBox) * widthParts + "%";
 };
 export const roadMapProps = {
   loop: false,

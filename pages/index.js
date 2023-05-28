@@ -7,7 +7,7 @@ import NftSingle from './nft-single';
 import RoadMapSlider from "../src/components/RoadMapStep";
 import SectionDivider from "../src/components/SectionDivider";
 import Layout from "../src/layout/Layout";
-import Team from '../src/components/TeamName';
+// import Team from '../src/components/TeamName';
 
 const Index = () => {
   return (
@@ -35,7 +35,7 @@ const Index = () => {
         {/* <SectionDivider /> */}
         {/* !Section Divider */}
         {/* Section RoadMap */}
-        <Team />
+        {/* <Team /> */}
         {/* !Section RoadMap */}
         {/* Section Divider */}
         {/* <SectionDivider /> */}
