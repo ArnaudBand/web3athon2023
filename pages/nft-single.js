@@ -1,14 +1,32 @@
 import Link from "next/link";
-import { useContractMetadata, useNFTDrop, useContract, useMetadata } from "@thirdweb-dev/react";
+import {
+  useActiveClaimConditionForWallet,
+  useAddress,
+  useClaimConditions,
+  useClaimerProofs,
+  useClaimIneligibilityReasons,
+  useContract,
+  useContractMetadata,
+  useTotalCirculatingSupply,
+  Web3Button,
+} from "@thirdweb-dev/react";
 import Layout from "../src/layout/Layout";
 
-const contract_address = "0xC2f28E615f10e965564A53e99922C999c9Ffc7dE";
+const contract_address = "0xEB4Fcfb366448a5749704d16576218a30fCF0149";
 
 const NftSingle = () => {
-  const { contract } = useContract(contract_address);
-  const { data, isLoading, error } = useMetadata(contract);
+  const address = useAddress();
 
-  console.log(data)
+  // Define a state variable for the quantity and a function to update it using useState
+  // const [quantity, setQuantity] = useState(1);
+
+  // Get the contract object for the specified contract address using the useContract hook
+  const { contract: editionDrop } = useContract(contract_address);
+
+  // Get the metadata of the editionDrop contract using the useContractMetadata hook
+  const { data: contractMetadata } = useContractMetadata(editionDrop);
+
+  console.log("contract: ", contractMetadata)
   return (
     <Layout pageTitle={"Minting"}>
       <div className="metaportal_fn_mintpage">
@@ -91,7 +109,7 @@ const NftSingle = () => {
                 // data-text="Meta Legends #5675"
                 data-align="left"
               >
-                {data?.name}
+                {contractMetadata?.name}
               </h3>
               <div className="desc">
                 <p>
