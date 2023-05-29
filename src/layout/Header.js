@@ -56,11 +56,6 @@ const Header = ({ walletToggle, navigationToggle }) => {
                   <a className="creative_link">Team</a>
                 </Link>
               </li>
-              <li>
-                <Link href="/#roadmap">
-                  <a className="creative_link">Roadmap</a>
-                </Link>
-              </li>
             </ul>
           </div>
           <div className="play_games">

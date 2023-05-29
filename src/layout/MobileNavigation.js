@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Fragment, useState } from "react";
+import { ConnectWallet } from "@thirdweb-dev/react";
 import { connect } from "react-redux";
 import { navigationToggle, walletToggle } from "../redux/actions/siteSettings";
 
@@ -59,13 +60,7 @@ const MobileNavigation = ({ walletToggle, navigationToggle }) => {
              style={{fontSize: "1.5vw", borderRadius:"8px", background:"#7000ff", }}>Play Games</a>
           </div>
           <div className="wallet">
-            <a
-              href="#"
-              className="metaportal_fn_button wallet_opener"
-              onClick={() => walletToggle(true)}
-            >
-              <span>Wallet</span>
-            </a>
+              <ConnectWallet />
           </div>
         </div>
         <div className="mob_mid">
