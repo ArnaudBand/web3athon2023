@@ -37,7 +37,7 @@ const Header = ({ walletToggle, navigationToggle }) => {
                 </Link>
               </li>
               <li>
-                <Link href="/nft-single">
+                <Link href="https://edittion-drop.vercel.app/">
                   <a className="creative_link">Mint</a>
                 </Link>
               </li>
