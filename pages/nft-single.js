@@ -1,14 +1,8 @@
 import Link from "next/link";
-import { useContractMetadata, useNFTDrop, useContract, useMetadata } from "@thirdweb-dev/react";
 import Layout from "../src/layout/Layout";
 
-const contract_address = "0x12A243D816aE3B64dC23def3821fe8A9549EF42b";
-
 const NftSingle = () => {
-  const { contract } = useContract(contract_address);
-  const { data, isLoading, error } = useMetadata(contract);
 
-  console.log(data)
   return (
     <Layout pageTitle={"Minting"}>
       <div className="metaportal_fn_mintpage">
