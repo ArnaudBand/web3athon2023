@@ -82,10 +82,10 @@ const NftSingle = () => {
               </div>
               <h3
                 className="fn__maintitle"
-                // data-text="Meta Legends #5675"
+                data-text="S3SH"
                 data-align="left"
               >
-                {data?.name}
+                S3SH
               </h3>
               <div className="desc">
                 <p>
