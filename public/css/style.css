@@ -1190,7 +1190,8 @@ a.full_link {
 .play_games{
 	background-color: rgb(233, 233, 233);
 	padding: 1rem 0.5rem;
-    border-radius: 12px;
+  border-radius: 12px;
+	color: black;
 }
 .play_games:hover {
 	background-color: #7000ff;
