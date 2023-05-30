@@ -1188,7 +1188,8 @@ a.full_link {
 }
 
 .play_games{
-	background-color: gray;
+	background-color: rgb(233, 233, 233);
+	padding: 1rem 0.5rem;
 
 }
 .play_games:hover{
