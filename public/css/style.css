@@ -7730,3 +7730,7 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 	}
 }
 
+.img__logo {
+	height: 100px;
+	width: 100px;
+}

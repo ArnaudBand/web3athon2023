@@ -19,7 +19,7 @@ const Header = ({ walletToggle, navigationToggle }) => {
             <div className="logo">
               <Link href="/">
                 <a>
-                  <h4>Web3athon</h4>
+                <img className="img__logo" src="/img/logo.png" alt="" />
                 </a>
               </Link>
             </div>

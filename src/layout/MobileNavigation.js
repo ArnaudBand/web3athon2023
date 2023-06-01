@@ -11,10 +11,10 @@ const MobileNavigation = ({ walletToggle, navigationToggle }) => {
       <div className="metaportal_fn_mobnav">
         <div className="mob_top">
           <div className="social_trigger">
-            <div className="trigger" onClick={() => navigationToggle(true)}>
+            {/* <div className="trigger" onClick={() => navigationToggle(true)}>
               <span />
-            </div>
-            <div className="social">
+            </div> */}
+            {/* <div className="social">
               <ul>
                 <li>
                   <a
@@ -53,7 +53,7 @@ const MobileNavigation = ({ walletToggle, navigationToggle }) => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
           <div className="play_games" >
              <a  href="https://nft-gated-eight.vercel.app/login" 
@@ -67,7 +67,7 @@ const MobileNavigation = ({ walletToggle, navigationToggle }) => {
           <div className="logo">
             <Link href="/">
               <a>
-                <img src="/img/logo.png" alt="" />
+                <img className="img__logo" src="/img/logo.png" alt="" />
               </a>
             </Link>
           </div>
