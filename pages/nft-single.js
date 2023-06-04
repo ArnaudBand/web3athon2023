@@ -4,6 +4,7 @@ import {XdcApothemNetwork} from "@thirdweb-dev/chains";
 import {ThirdwebSDK} from "@thirdweb-dev/sdk/evm"
 import { useContractMetadata, useNFTDrop, useContract, useMetadata } from "@thirdweb-dev/react";
 
+<<<<<<< HEAD
 const Sdk = new ThirdwebSDK(XdcApothemNetwork)
 const getContractAddress = async() => {
   const contract = await Sdk.getContract("0xC2f28E615f10e965564A53e99922C999c9Ffc7dE")
@@ -17,6 +18,10 @@ const NftSingle = () => {
   // const { data, isLoading, error } = useMetadata(contract);  //this is hook function 
 
   // console.log(contract)
+=======
+const NftSingle = () => {
+
+>>>>>>> b26decf93f400c229b817444167e96e161cea78f
   return (
     <Layout pageTitle={"Minting"}>
       <div className="metaportal_fn_mintpage">
@@ -96,10 +101,10 @@ const NftSingle = () => {
               </div>
               <h3
                 className="fn__maintitle"
-                // data-text="Meta Legends #5675"
+                data-text="S3SH"
                 data-align="left"
               >
-                {data?.name}
+                S3SH
               </h3>
               <div className="desc">
                 <p>

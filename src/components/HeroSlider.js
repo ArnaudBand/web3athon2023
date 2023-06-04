@@ -156,7 +156,7 @@ const HeroSlider = () => {
                   <img src="/img/1x1.jpg" alt="" />
                   <a
                     className="popup-youtube metaportal_fn_videobutton"
-                    href="https://www.youtube.com/embed/7e90gBu4pas"
+                    href="https://www.youtube.com/shorts/qmwXC7F50Ow"
                   >
                     <img src="/svg/play.svg" alt="" className="fn__svg" />
                   </a>
@@ -222,14 +222,14 @@ const HeroSlider = () => {
           <p>
           Introducing "S3sh," an educational game inspired by the ancient African principles of the goddess Seshat. This web3 game explores African history, allowing players to earn rewards and discover hidden historical information. Dive into the blog "Theresa V. Kennedy's Insights" to enhance your understanding of African culture, traditions, and important events. "S3sh" is available on Facebook, web, and the innovative Solana Saga platform, offering an immersive experience blending entertainment and valuable knowledge.
           </p>
-          <a
+          {/* <a
             href="https://opensea.io/"
             className="metaportal_fn_button"
             target="_blank"
             rel="noreferrer"
           >
             <span>Buy On Opensea</span>
-          </a>
+          </a> */}
         </div>
         {/* !Description */}
       </div>

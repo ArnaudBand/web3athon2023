@@ -479,6 +479,7 @@ input[type="text"]:focus {
 	display: table;
 }
 
+
 @media(max-width: 1200px) {
 	.container {
 		padding: 0 40px;
@@ -1186,10 +1187,41 @@ a.full_link {
 	text-decoration: none;
 }
 
+.play_games{
+	background-color: rgb(233, 233, 233);
+	padding: 0.45rem 0.15rem;
+  border-radius: 12px;
+	color: black;
+}
+.play_games:hover {
+	background-color: #7000ff;
+	color: whitesmoke;
+}
 
+.play_games a{
+font-size: 1vw;
+padding: 12px;
+color: #10051f;
+border-radius: 8px;
+cursor: pointer;
+text-decoration: none;
+}
+.play_games a:hover{
+	color: whitesmoke;
+}
 
+@media only screen and (max-width: 1200px) {
+	.play_games {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 1px;
+	}
+}
 
+/* 
 
+*/
 
 
 .fn__maintitle {
@@ -1239,11 +1271,6 @@ a.full_link {
 .fn__maintitle.upper {
 	text-transform: uppercase;
 }
-
-
-
-
-
 
 
 #home {
@@ -1565,6 +1592,8 @@ a.full_link {
 
 /* Since v3.0*/
 @media(max-width: 768px) {
+
+	
 	.fn_cs_slider[data-responsive="on"] .slider_top li {
 		width: 100%;
 	}
@@ -7699,4 +7728,9 @@ a.metaportal_fn_videobutton:hover .fn__svg,
 	.fn_cs_video a {
 		color: #fff;
 	}
+}
+
+.img__logo {
+	height: 100px;
+	width: 100px;
 }

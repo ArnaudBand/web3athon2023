@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Fragment, useState } from "react";
+import { ConnectWallet } from "@thirdweb-dev/react";
 import { connect } from "react-redux";
 import { navigationToggle, walletToggle } from "../redux/actions/siteSettings";
 
@@ -10,10 +11,10 @@ const MobileNavigation = ({ walletToggle, navigationToggle }) => {
       <div className="metaportal_fn_mobnav">
         <div className="mob_top">
           <div className="social_trigger">
-            <div className="trigger" onClick={() => navigationToggle(true)}>
+            {/* <div className="trigger" onClick={() => navigationToggle(true)}>
               <span />
-            </div>
-            <div className="social">
+            </div> */}
+            {/* <div className="social">
               <ul>
                 <li>
                   <a
@@ -52,23 +53,21 @@ const MobileNavigation = ({ walletToggle, navigationToggle }) => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
+          </div>
+          <div className="play_games" >
+             <a  href="https://nft-gated-eight.vercel.app/login" 
+             style={{fontSize: "1.5vw", borderRadius:"8px", background:"#7000ff", }}>Play Games</a>
           </div>
           <div className="wallet">
-            <a
-              href="#"
-              className="metaportal_fn_button wallet_opener"
-              onClick={() => walletToggle(true)}
-            >
-              <span>Wallet</span>
-            </a>
+              <ConnectWallet />
           </div>
         </div>
         <div className="mob_mid">
           <div className="logo">
             <Link href="/">
               <a>
-                <img src="/img/logo.png" alt="" />
+                <img className="img__logo" src="/img/logo.png" alt="" />
               </a>
             </Link>
           </div>
@@ -92,7 +91,7 @@ const MobileNavigation = ({ walletToggle, navigationToggle }) => {
               </a>
             </li>
             <li>
-                <Link href="/nft-single">
+                <Link href="https://edittion-drop.vercel.app/">
                   <a className="creative_link">Mint</a>
                 </Link>
               </li>

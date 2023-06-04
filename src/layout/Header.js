@@ -19,7 +19,7 @@ const Header = ({ walletToggle, navigationToggle }) => {
             <div className="logo">
               <Link href="/">
                 <a>
-                  <h4>Web3athon</h4>
+                <img className="img__logo" src="/img/logo.png" alt="" />
                 </a>
               </Link>
             </div>
@@ -37,7 +37,7 @@ const Header = ({ walletToggle, navigationToggle }) => {
                 </Link>
               </li>
               <li>
-                <Link href="/nft-single">
+                <Link href="https://edittion-drop.vercel.app/">
                   <a className="creative_link">Mint</a>
                 </Link>
               </li>
@@ -56,15 +56,13 @@ const Header = ({ walletToggle, navigationToggle }) => {
                   <a className="creative_link">Team</a>
                 </Link>
               </li>
-              <li>
-                <Link href="/#roadmap">
-                  <a className="creative_link">Roadmap</a>
-                </Link>
-              </li>
             </ul>
           </div>
+          <div className="play_games">
+             <a  href="https://nft-gated-eight.vercel.app/login"
+             >Play Games</a>
+          </div>
           <div className="wallet">
-            
               <ConnectWallet />
           </div>
         </div>
