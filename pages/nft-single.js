@@ -1,27 +1,8 @@
 import Link from "next/link";
 import Layout from "../src/layout/Layout";
-import {XdcApothemNetwork} from "@thirdweb-dev/chains";
-import {ThirdwebSDK} from "@thirdweb-dev/sdk/evm"
-import { useContractMetadata, useNFTDrop, useContract, useMetadata } from "@thirdweb-dev/react";
 
-<<<<<<< HEAD
-const Sdk = new ThirdwebSDK(XdcApothemNetwork)
-const getContractAddress = async() => {
-  const contract = await Sdk.getContract("0xC2f28E615f10e965564A53e99922C999c9Ffc7dE")
-  //for checking
-  console.log("Contract:", contract);
-
-}
-getContractAddress();
-const NftSingle = () => {
-  // const { contract } = useContract(contract_address);
-  // const { data, isLoading, error } = useMetadata(contract);  //this is hook function 
-
-  // console.log(contract)
-=======
 const NftSingle = () => {
 
->>>>>>> b26decf93f400c229b817444167e96e161cea78f
   return (
     <Layout pageTitle={"Minting"}>
       <div className="metaportal_fn_mintpage">
@@ -207,21 +188,6 @@ const NftSingle = () => {
               <div className="mright">
                 <div className="mint_time">
                   <h4>Public Mint Ends In</h4>
-                  {/* 
-									There is two types of countdown: due_date (Due Date), ever (Evergreen timer)
-										1. 	data-type="due_date"
-											In this case you have to change value of data-date. For example:
-											data-date="October 13, 2022 12:30:00"
-											It will mean that mint will finished at this time
-
-										2. 	data-type="ever"
-											In this case you have to change values of data-days, data-hours, data-minutes and data-seconds. For example:
-											data-days="34"
-											data-hours="10"
-											data-minutes="20"
-											data-seconds="0"
-											It will mean that the time expires after this time, but when the page is refreshed, the value will return again. It means, it won't end.
-								*/}
                   <h3
                     className="metaportal_fn_countdown"
                     data-type="ever"
